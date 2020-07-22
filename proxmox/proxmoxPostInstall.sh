@@ -30,3 +30,4 @@
 	apt -f install
 	apt dist-upgrade -y
 	apt -f install
+	reboot now
