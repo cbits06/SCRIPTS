@@ -11,5 +11,3 @@
 	echo "deb http://security.debian.org/debian-security stretch/updates main contrib" >> /etc/apt/sources.list
 	rm /etc/apt/sources.list.d/pve-enterprise.list
 	sed -i.bak "s/if (data.status !== 'Active') {/if (false) {/g" /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
-# Restart ProxMox Service
-	systemctl restart pveproxy.service
